@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="./script.js" defer></script>
+
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <form class="formulario">
+      <div class="form-details form-day">
+        <label class="label">day</label>
+        <input class="input-day inputError" type="number" placeholder="DD">
+        <p class="inputText textError">This field is required</p>
+        <p class="inputDate textDateError">Must be a valid day</p>
+      </div>
+      <div class="form-details form-month">
+        <label class="label">month</label>
+        <input class="input-month" type="number" placeholder="MM">
+        <p class="inputText textError">This field is required</p>
+        <p class="inputDate textDateError">Must be a valid month</p>
+      </div>
+      <div class="form-details form-year">
+        <label class="label">year</label>
+        <input class="input-year" type="number" placeholder="YYYY">
+        <p class="inputText textError">This field is required</p>
+        <p class="inputDate textDateError">Must be a valid year</p>
+      </div>
+    </form>
+
+    <div class="svg-img">
+      <span class="line"></span>
+      <img src="./assets/images/icon-arrow.svg" alt="">
+    </div>
+
+    <div class="result">
+      <p><span class="result-age">--</span> years</p>
+      <p><span class="result-age">--</span> months</p>
+      <p><span class="result-age">--</span> days</p>
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,800&display=swap');
+
+:root {
+  --primary: hsl(259, 100%, 65%);
+  --secondary: hsl(0, 100%, 67%);
+
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--light-grey);
+}
+
+.container {
+  background-color: var(--white);
+  padding: 50px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 150px;
+}
+
+.formulario {
+  display: flex;
+  gap: 20px;
+  color: var(--smokey-grey);
+}
+
+.form-details label {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding-bottom: 0.4rem;
+}
+
+.form-details input {
+  font-size: 2rem;
+  padding: 10px 20px;
+  width: 120px;
+  border: 1px solid var(--light-grey);
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form-details input:hover,
+.form-details input:active,
+.form-details input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.svg-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.svg-img img {
+  background-color: var(--primary);
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.svg-img img:hover {
+  cursor: pointer;
+  background-color: var(--off-black);
+}
+
+.line:after {
+  content: '';
+  width: 550px;
+  height: 1px;
+  background-color: var(--light-grey);
+  display: block;
+}
+
+.result {
+  font-size: 5rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 6rem;
+}
+
+.result-age {
+  color: var(--primary);
+}
+
+.labelError {
+  color: var(--secondary);
+}
+
+.textError,
+.textDateError {
+  font-size: 0.7rem;
+  padding-top: 5px;
+  color: var(--secondary);
+  font-style: italic;
+  display: none;
+}
